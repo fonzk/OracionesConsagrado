@@ -13,7 +13,7 @@ font-size: 2rem;
 }
 .header {
 height: 50px;
-background-color: rgb(9, 36, 27);
+background-color: #082119;
 }
 .header .header-title{
 line-height: 50px;
@@ -48,17 +48,17 @@ body .main::-webkit-scrollbar-thumb:hover {
 }
 /* Cambiamos el fondo cuando esté en active */
 body .main::-webkit-scrollbar-thumb:active {
-    background-color: #999999;
+    background-color:rgb(28, 48, 4);
 }
   /* Ponemos un color de fondo y redondeamos las esquinas del track */
 body .main::-webkit-scrollbar-track {
-    background: #e1e1e1;
-    border-radius: 4px;
+    background: rgb(28, 48, 4);
+    /* border-radius: 4px; */
 }
 /* Cambiamos el fondo cuando esté en active o hover */
 body .main::-webkit-scrollbar-track:hover,
 body .main::-webkit-scrollbar-track:active {
-  background: #d4d4d4;
+  background:rgb(28, 48, 4);
 }
 body .footer{
     height: calc(100vh - 85vh - 50px );
