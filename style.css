@@ -26,10 +26,39 @@ text-transform: uppercase;
 body .main {
 
     height: 80vh;
-    background-color: blue;
-    overflow: hidden;
+ 
+    overflow-y: scroll;
+    
+}
+body .main::-webkit-scrollbar {
+    width: 0.8em;
+    
+  }
+   /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body .main::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body .main::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+body .main::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+  /* Ponemos un color de fondo y redondeamos las esquinas del track */
+body .main::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+body .main::-webkit-scrollbar-track:hover,
+body .main::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
 }
 body .footer{
     height: 10vh;
-    background-color: brown;
+
 }
