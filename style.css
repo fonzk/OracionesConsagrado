@@ -12,7 +12,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .header{
-   height:50px;
+    height:50px;
 }
 .header .ico{
     display: inline-block;
@@ -62,30 +62,28 @@ body .footer{
     bottom: 0;
     left: 0;
     z-index: 2;
-   
-
 }
 .header .ico:hover {
     color: lawngreen;
 }
- .header .ico:hover  +.header-title+ .nav{
-  display: block;
+.header .ico:hover  +.header-title+ .nav{
+    display: block;
 }
 
 @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?wo1q7b');
     src:  url('fonts/icomoon.eot?wo1q7b#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?wo1q7b') format('truetype'),
-      url('fonts/icomoon.woff?wo1q7b') format('woff'),
-      url('fonts/icomoon.svg?wo1q7b#icomoon') format('svg');
+    url('fonts/icomoon.ttf?wo1q7b') format('truetype'),
+    url('fonts/icomoon.woff?wo1q7b') format('woff'),
+    url('fonts/icomoon.svg?wo1q7b#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
+}
+
+[class^="icon-"], [class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: never;
     font-style: normal;
@@ -93,15 +91,14 @@ body .footer{
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
+
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  .ico{
-      padding-left: 5px;
-  }
-  .icon-th-menu:before {
+}
+.ico{
+    padding-left: 5px;
+}
+.icon-th-menu:before {
     content: "\e900";
-  }
-  
+}
