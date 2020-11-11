@@ -8,64 +8,37 @@ html{
     font-size: 62.5%;
 }
 body{
-font-size: 2rem;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 }
-.header {
-height: 50px;
-background-color: #082119;
+.header{
+   height:50px;
 }
+.header .ico{
+    display: inline-block;
+}
+
 .header .header-title{
+    display: inline-block;
+    width: calc(100% - 30px);
 line-height: 50px;
     text-align: center;
     font-weight: bold;
     color: rgb(214, 211, 191);
     text-shadow:1px 2px 2px black;
 text-transform: uppercase;
+font-size: 1.8rem;
 }
-body .main {
 
+body .main {
     height: 85vh;
- 
     overflow-y: scroll;
-    
-}
-body .main::-webkit-scrollbar {
-    width: 0.8em;
-    
-  }
-   /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
-body .main::-webkit-scrollbar-thumb {
-    /* background: #ccc; */
-    background: rgb(28, 48, 4);
-    border-radius: 4px;
-}
-/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
-body .main::-webkit-scrollbar-thumb:hover {
-    /* background: #b3b3b3; */
-    background: #0bdf86;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-/* Cambiamos el fondo cuando esté en active */
-body .main::-webkit-scrollbar-thumb:active {
-    background-color:rgb(28, 48, 4);
-}
-  /* Ponemos un color de fondo y redondeamos las esquinas del track */
-body .main::-webkit-scrollbar-track {
-    background: rgb(28, 48, 4);
-    /* border-radius: 4px; */
-}
-/* Cambiamos el fondo cuando esté en active o hover */
-body .main::-webkit-scrollbar-track:hover,
-body .main::-webkit-scrollbar-track:active {
-  background:rgb(28, 48, 4);
 }
 body .footer{
     height: calc(100vh - 85vh - 50px );
-background-color: rgb(3, 17, 13);
+    background-color: rgb(3, 17, 13);
 }
 .main .oracion-titulo{
-
     background-color: rgb(28, 48, 4);
     color: sandybrown;
     height: 30px;
@@ -77,6 +50,58 @@ background-color: rgb(3, 17, 13);
     font-size: 14px;
 }
 .main .oracion-texto p{
-
     padding: 15px;
 }
+.nav{
+    background-color: #082119;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+   
+
+}
+.header .ico:hover {
+    color: lawngreen;
+}
+ .header .ico:hover  +.header-title+ .nav{
+  display: block;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?wo1q7b');
+    src:  url('fonts/icomoon.eot?wo1q7b#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?wo1q7b') format('truetype'),
+      url('fonts/icomoon.woff?wo1q7b') format('woff'),
+      url('fonts/icomoon.svg?wo1q7b#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .ico{
+      padding-left: 5px;
+  }
+  .icon-th-menu:before {
+    content: "\e900";
+  }
+  
