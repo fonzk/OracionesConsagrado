@@ -1,0 +1,35 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+height: 10vh;
+background-color: aquamarine;
+}
+.header .header-title{
+line-height: 10vh;
+    text-align: center;
+    font-weight: bold;
+    color: gold;
+    text-shadow:1px 2px 2px black;
+text-transform: uppercase;
+}
+body .main {
+
+    height: 80vh;
+    background-color: blue;
+    overflow: hidden;
+}
+body .footer{
+    height: 10vh;
+    background-color: brown;
+}
